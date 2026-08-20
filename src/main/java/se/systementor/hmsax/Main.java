@@ -1,4 +1,4 @@
-package org.hmsax;
+package se.systementor.hmsax;
 
 public class Main {
     public static void main(String[] args) {

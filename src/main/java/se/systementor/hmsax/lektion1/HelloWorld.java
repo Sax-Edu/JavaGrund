@@ -1,4 +1,4 @@
-package org.hmsax.lektion1;
+package se.systementor.hmsax.lektion1;
 
 public class HelloWorld {
     public static void main(String[] args) {
