@@ -6,7 +6,7 @@ public class Main {
         //Notera radbrytning med \n ovan. Nedan bjussar jag på en gratis for-loop
         for (int i = 1; i <= 5; i++) {
             int countdownInt = 5 - i;
-            System.out.println(countdownInt + 1);
+            System.out.println("T minus " + (countdownInt + 1)); // Parentes runt operationen för att undvika Strängkonkatenering
             if (countdownInt == 0) {
                 System.out.println("TAKEOFF!");
             }
