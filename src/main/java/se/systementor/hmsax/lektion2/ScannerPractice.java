@@ -8,6 +8,10 @@ public class ScannerPractice {
         System.out.print("Vad heter du i förnamn? ");
         String firstName = scanner.nextLine();
         System.out.println("Hej " + firstName + "!");
+        scanner.close();
+    }
+}
+
         /*
         System.out.print("Din ålder: ");
         int age = scanner.nextInt();
@@ -16,6 +20,3 @@ public class ScannerPractice {
         String lastName = scanner.nextLine();
         System.out.println("Hej " + firstName + " " + lastName + ", du är " + age + " år.");
         */
-        scanner.close();
-    }
-}
