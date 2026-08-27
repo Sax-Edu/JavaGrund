@@ -14,7 +14,9 @@ public class VG1PrimeChecker {
         if (number <= 1) {
             isPrime = false;
         } else {
-            // Lösningen här med "i * i <= number" blir mycket snabbare för stora tal, men "i<number" är också en korrekt lösning.
+            /* Lösningen här med "i * i <= number" blir mycket snabbare för stora tal,
+            men "i<number" är också en korrekt lösning. Uppmärksamma "<" istället för "<=".
+            Lösning med hjälp av Math-biblioteket är också tillåtet. */
             for (int i = 2; i * i <= number; i++) {
                 if (number % i == 0) {
                     isPrime = false;
