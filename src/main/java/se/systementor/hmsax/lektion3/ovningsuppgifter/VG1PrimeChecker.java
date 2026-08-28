@@ -12,15 +12,15 @@ public class VG1PrimeChecker {
         boolean isPrime = true;
 
         if (number <= 1) {
-            isPrime = false;
+            isPrime = false; // Primtal måste vara större än 1
         } else {
             /* Lösningen här med "i * i <= number" blir mycket snabbare för stora tal,
             men "i<number" är också en korrekt lösning. Uppmärksamma "<" istället för "<=".
             Lösning med hjälp av Math-biblioteket är också tillåtet. */
             for (int i = 2; i * i <= number; i++) {
                 if (number % i == 0) {
-                    isPrime = false;
-                    break;
+                    isPrime = false; // Hittade en delare, och alltså är number inte ett primtal
+                    break;           // Behöver inte leta vidare
                 }
             }
         }
@@ -30,6 +30,7 @@ public class VG1PrimeChecker {
         } else {
             System.out.println(number + " är inte ett primtal.");
         }
+        // alternativ utskrift med ternary operator: System.out.println(isPrime ? n + " är primtal" : n + " är inte primtal");
 
         scanner.close();
     }
