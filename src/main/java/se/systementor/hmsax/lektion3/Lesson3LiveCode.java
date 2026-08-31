@@ -9,12 +9,21 @@ public class Lesson3LiveCode {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         String a = "Hej";
-        System.out.print("Skriv \"Hej\": ");
-        String userInput = scan.nextLine();
-        if (userInput.equals(a)) {
-            System.out.println("Du skrev oerhört rätt!");
-        } else System.out.println("Nu skrev du fel. :(");
+
+        boolean running = true;
+
+        while (running) {
+            System.out.print("Skriv \"Hej\" (eller \"quit\" för att avsluta): ");
+            String userInput = scan.nextLine();
+            if (userInput.equalsIgnoreCase(a)) {
+                System.out.println("Du skrev oerhört rätt!");
+            } else if (userInput.equalsIgnoreCase("quit")) {
+                System.out.println("Hejdå!");
+                running = false;
+            } else System.out.println("Nu skrev du fel. :(");
+        }
         scan.close();
     }
 }
