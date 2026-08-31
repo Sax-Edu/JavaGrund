@@ -1,10 +1,12 @@
 package se.systementor.hmsax.lektion3;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class BmiCalculator2 {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ange ditt namn: ");
         String namn = scanner.nextLine();
