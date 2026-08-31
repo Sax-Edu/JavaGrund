@@ -4,7 +4,9 @@ package se.systementor.hmsax.lektion3;
 import java.util.Scanner;
 
 public class Lesson3LiveCode {
+
     // Snabbkommandon: psvm +tab för main-metoden, sout +tab för println.
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String a = "Hej";
