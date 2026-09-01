@@ -33,9 +33,9 @@ public class VG1 {
         System.out.println("4. Avsluta");
     }
 
-    public static int lasInHeltal(Scanner scanner, String ledtext) {
+    public static int lasInHeltal(Scanner scanner, String prompt) {
         while (true) {
-            System.out.print(ledtext);
+            System.out.print(prompt);
             try {
                 return Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
@@ -44,9 +44,9 @@ public class VG1 {
         }
     }
 
-    public static int lasInHeltalIIntervall(Scanner scanner, String ledtext, int min, int max) {
+    public static int lasInHeltalIIntervall(Scanner scanner, String prompt, int min, int max) {
         while (true) {
-            int tal = lasInHeltal(scanner, ledtext);
+            int tal = lasInHeltal(scanner, prompt);
             if (tal >= min && tal <= max) {
                 return tal;
             }
