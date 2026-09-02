@@ -12,7 +12,7 @@ public class Lesson4LiveCode {
         //Här nedan är ett exempel på anrop till metoden readInt som vi skapade i klassen InputHelper
         Scanner scan = new Scanner(System.in);
         int halpInt = InputHelper.readInt(scan, "Hej, skriv ett heltal: ");
-        System.out.println("Du skrev "+halpInt);
+        System.out.println("Du skrev " + halpInt);
 
     }
 
@@ -22,7 +22,7 @@ public class Lesson4LiveCode {
         if (n % 3 == 0 && n % 5 == 0) {
             answer = "FizzBuzz";
         } else if (n % 3 == 0) {
-            answer ="Fizz";
+            answer = "Fizz";
         } else if (n % 5 == 0) {
             answer = "Buzz";
         } else {
