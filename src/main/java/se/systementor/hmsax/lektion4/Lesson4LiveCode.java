@@ -11,13 +11,13 @@ public class Lesson4LiveCode {
 
         //Här nedan är ett exempel på anrop till metoden readInt som vi skapade i klassen InputHelper
         Scanner scan = new Scanner(System.in);
-        int halpInt = InputHelper.readInt(scan, "Hej");
-        System.out.println(halpInt);
+        int halpInt = InputHelper.readInt(scan, "Hej, skriv ett heltal: ");
+        System.out.println("Du skrev "+halpInt);
 
     }
 
     public static String getFizzBuzz(int n) {
-        String answer = "";
+        String answer;
 
         if (n % 3 == 0 && n % 5 == 0) {
             answer = "FizzBuzz";
@@ -63,7 +63,7 @@ public class Lesson4LiveCode {
     }
 
     //scope och lokala variabler nedan
-    
+
     public static void doubleIt(int x) {
         int abc = 15;
         x = x * 2;
