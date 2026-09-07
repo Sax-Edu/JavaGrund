@@ -16,7 +16,7 @@ public class G4 {
 
         System.out.println("Efter: " +joinListItemsWithCommas(list));
 
-        System.out.println("Första varan: " + list.get(0));
+        System.out.println("Första varan: " + list.get(0)); //list.getFirst() funkar också
     }
 
     public static String joinListItemsWithCommas(ArrayList<String> list){
