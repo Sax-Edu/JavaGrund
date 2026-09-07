@@ -9,13 +9,15 @@ import java.util.List;
 public class Lesson5LiveCode {
     public static void main(String[] args) {
 
-        String text2 = "Hej jag gillar pizza";
+        String text2 = "hej jag gillar pizza";
         String[] textArray = text2.split(" ");
         for (String item : textArray) {
             System.out.println(item);
         }
 
-        //alternativ för utskrift:
+        //alternativ för sorterad utskrift:
+
+        Collections.sort(Arrays.asList(textArray));
         System.out.println(Arrays.toString(textArray));
 
 
