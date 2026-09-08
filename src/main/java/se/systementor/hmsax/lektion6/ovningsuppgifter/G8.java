@@ -26,8 +26,8 @@ public class G8 {
             System.out.print(prompt);
             String input = scanner.nextLine().trim();
             try {
-                int number = Integer.parseInt(input);
                 if (input != null && !input.isEmpty()) {
+                    int number = Integer.parseInt(input);
                     return number;
                 }
             } catch (NumberFormatException e) {
