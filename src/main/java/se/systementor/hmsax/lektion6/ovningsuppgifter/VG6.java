@@ -95,7 +95,7 @@ public class VG6 {
         }
         return false;
     }
-    public static void validatePokemon(String name, int hp) {
+    public static void validatePokemon(String name, int hp)  {
         if (name == null || name.isEmpty()) {
             throw new InvalidPokemonException("Namnet får inte vara tomt.");
         }
