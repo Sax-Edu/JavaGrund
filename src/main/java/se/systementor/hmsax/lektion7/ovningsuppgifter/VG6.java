@@ -64,6 +64,8 @@ public class VG6 {
         for (String[] p : pokedex) {
             System.out.println("- " + p[0] + " (" + p[1] + ", " + p[2] + " HP)");
         }
+
+        //lägg till och spara
         pokedex.add(new String[]{"Pikachu", "Electric","45"});
         save(path, pokedex);
     }
