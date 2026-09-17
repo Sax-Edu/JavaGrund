@@ -13,7 +13,19 @@ public class Pokedex {
     private static ArrayList<Pokemon> pokedex = new ArrayList<>();
 
     public static void main(String[] args) {
+        seedData();
 
+        for (Pokemon pok : pokedex) {
+            System.out.println("Name: " + pok.name + "(" + pok.type + ")");
+            System.out.println(" - Max HP: " + pok.maxHp);
+            System.out.println(" - Current HP: " + pok.currentHp);
+            System.out.println(" - Attacks:");
+            for (Attack att : pok.attacks) {
+                System.out.println("  -  " + att.name + " (base damage: " + att.baseDamage
+                        + ",accuracy: " + att.accuracy + ",type: " + att.type + ")");
+            }
+            System.out.println();
+        }
     }
 
     private static void seedData() {
