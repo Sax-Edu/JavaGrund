@@ -20,8 +20,8 @@ public class VG6 {
         }
     }
 
-    public static List<String[]> load(Path path) {
-        List<String[]> result = new ArrayList<>();
+    public static ArrayList<String[]> load(Path path) {
+        ArrayList<String[]> result = new ArrayList<>();
         if (!Files.exists(path)) {
             System.out.println("Ingen sparad pokedex hittades startar tom.");
             return result;
@@ -58,7 +58,7 @@ public class VG6 {
         Path path = Path.of("pokedex.csv");
 
         // Ladda vid start
-        List<String[]> pokedex = load(path);
+        ArrayList<String[]> pokedex = load(path);
 
         // Skriv ut laddat innehåll
         for (String[] p : pokedex) {
