@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VG7 {
-
+/*
     public static void main(String[] args) {
         Path filePath = Path.of("cars.json");
 
@@ -65,5 +65,5 @@ public class VG7 {
             System.err.println("Kunde inte ladda JSON (skadad eller fel format): " + e.getMessage());
             return new ArrayList<>();
         }
-    }
+    }*/
 }
