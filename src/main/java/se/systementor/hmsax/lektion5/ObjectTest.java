@@ -19,14 +19,29 @@ public class ObjectTest {
         Window eastWindow = new Window("Fönster åt öst", Color.YELLOW, true);
         Window northWindow = new Window("Fönster åt norr", Color.RED, false);
 
+        northWindow.setName(" "); //Valideringen i setName förhindrar detta
+        northWindow.setName("Jättefint fönster åt norr");
+
+        System.out.println(northWindow); //toString() Override
+        System.out.println(westWindow);
+
+        Window northWindow2 = new Window(northWindow.getName(), northWindow.getColor(), northWindow.isOpenable());
+
+        Window northWindow3 = northWindow;
+
+        System.out.println(northWindow == northWindow2); //FALSE! Olika, men likadana, objekt.
+        System.out.println(northWindow == northWindow3); //TRUE! Pekar på samma objekt
+
+
+        /*
         kitchen.windows.add(westWindow);
         kitchen.windows.add(eastWindow);
         kitchen.windows.add(northWindow);
 
-        System.out.println(kitchen.roomName + " " + kitchen.sqm + " " + kitchen.windows.get(0).name);
+        System.out.println(kitchen.roomName + " " + kitchen.sqm + " " + kitchen.windows.get(0).getName());
 
         for (Window win : kitchen.windows) {
-            System.out.println(win.name + ", Färg: " + win.color + ", " + (win.openable ? "öppningsbar" : "fast"));
+            System.out.println(win.getName() + ", Färg: " + win.getColor() + ", " + (win.isOpenable() ? "öppningsbar" : "fast"));
         }
 
         Room livingRoom = new Room("Vardagsrummet", 40);
@@ -47,7 +62,7 @@ public class ObjectTest {
         for (Room r : loadedRooms) {
             System.out.println("Rum: " + r.roomName + " (" + r.sqm + " kvm)");
             for (Window w : r.windows) {
-                System.out.println("  - " + w.name + ", Färg: " + w.color + ", " + (w.openable ? "Öppningsbar" : "Fast"));
+                System.out.println("  - " + w.getName() + ", Färg: " + w.getColor() + ", " + (w.isOpenable() ? "Öppningsbar" : "Fast"));
             }
         }
     }
@@ -63,7 +78,7 @@ public class ObjectTest {
 
             for (Window win : room.windows) {
                 // CSV-format: WindowName,Color,Openable,RoomName (Koppling!)
-                windowLines.add(win.name + "," + win.color + "," + win.openable + "," + room.roomName);
+                windowLines.add(win.getName() + "," + win.getColor() + "," + win.isOpenable() + "," + room.roomName);
             }
         }
 
@@ -122,6 +137,7 @@ public class ObjectTest {
         }
 
         return loadedRooms;
+    }*/
     }
 }
 
