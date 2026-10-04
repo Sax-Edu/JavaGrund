@@ -40,9 +40,9 @@ public class DamageAttack extends Attack {
     }
 
     @Override
-    public void executeAttack(Pokemon attacker, Pokemon defender) {
+    public void execute(Pokemon attacker, Pokemon defender) {
         // G5: Återanvänd basklassens loggskrift
-        super.executeAttack(attacker, defender);
+        super.execute(attacker, defender);
 
         // VG3: Beräkna kritisk träff
         boolean isCrit = canCritical && (random.nextInt(16) == 0); // ~1 på 16 chanser

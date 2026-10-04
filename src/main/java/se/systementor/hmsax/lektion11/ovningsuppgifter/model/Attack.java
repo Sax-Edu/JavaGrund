@@ -26,7 +26,7 @@ public abstract class Attack {
 
     // G5 & G6: Abstrakt metod som tvingar subklasser att definiera sitt beteende,
     // men basklassen tillhandahåller logg-funktionen via sin egen execute-kropp.
-    public void executeAttack(Pokemon attacker, Pokemon defender) {
+    public void execute(Pokemon attacker, Pokemon defender) {
         System.out.print(attacker.getName() + " anvander " + name + "! ");
     }
 }

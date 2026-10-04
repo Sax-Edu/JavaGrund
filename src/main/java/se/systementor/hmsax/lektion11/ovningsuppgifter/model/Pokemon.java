@@ -79,7 +79,7 @@ public class Pokemon {
         }
 
         Attack attack = attacks.get(attackIndex);
-        attack.executeAttack(this, defender);
+        attack.execute(this, defender);
     }
 
     @Override

@@ -16,8 +16,8 @@ public class StatusAttack extends Attack {
     }
 
     @Override
-    public void executeAttack(Pokemon attacker, Pokemon defender) {
-        super.executeAttack(attacker, defender);
+    public void execute(Pokemon attacker, Pokemon defender) {
+        super.execute(attacker, defender);
         System.out.println(defender.getName() + " blev " + statusEffect + ".");
     }
 }

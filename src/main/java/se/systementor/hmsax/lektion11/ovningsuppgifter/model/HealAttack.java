@@ -12,8 +12,8 @@ public class HealAttack extends Attack {
     }
 
     @Override
-    public void executeAttack(Pokemon attacker, Pokemon defender) {
-        super.executeAttack(attacker, defender);
+    public void execute(Pokemon attacker, Pokemon defender) {
+        super.execute(attacker, defender);
         attacker.heal(healAmount);
         System.out.println(attacker.getName() + " återstaller " + healAmount + " HP.");
     }

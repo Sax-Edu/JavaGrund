@@ -30,7 +30,7 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        System.out.println("\n=== G4 - G7: Anrop av executeAttack() & Polymorfism ===");
+        System.out.println("\n=== G4 - G7: Anrop av execute() & Polymorfism ===");
         Pokemon charizard = new Pokemon("Charizard", Type.FIRE, 100);
         Pokemon pikachu = new Pokemon("Pikachu", Type.ELECTRIC, 100);
 
@@ -39,18 +39,18 @@ public class Main {
         Attack poisonPowder = new StatusAttack("Poison Powder", 75, "förgiftad");
 
         System.out.println("Charizard HP: " + charizard.getCurrentHp());
-        tackle.executeAttack(pikachu, charizard);
+        tackle.execute(pikachu, charizard);
         System.out.println("Charizard HP: " + charizard.getCurrentHp());
 
-        thunderbolt.executeAttack(pikachu, charizard);
+        thunderbolt.execute(pikachu, charizard);
         System.out.println("Charizard HP: " + charizard.getCurrentHp());
 
-        poisonPowder.executeAttack(pikachu, charizard);
+        poisonPowder.execute(pikachu, charizard);
 
         System.out.println("\n=== G8: Polymorf lista av attacker ===");
         List<Attack> attackList = List.of(thunderbolt, poisonPowder, tackle);
         for (Attack a : attackList) {
-            a.executeAttack(pikachu, charizard);
+            a.execute(pikachu, charizard);
         }
 
         System.out.println("\n=== G9: is-a vs has-a ===");
@@ -61,7 +61,7 @@ public class Main {
          */
         Pokemon chansey = new Pokemon("Chansey", Type.NORMAL, 100);
         Attack recover = new HealAttack("Recover", 100, 50);
-        recover.executeAttack(chansey, chansey);
+        recover.execute(chansey, chansey);
 
         System.out.println("\n=== G10: Pattern matching med instanceof ===");
         for (Attack a : attackList) {
@@ -80,8 +80,8 @@ public class Main {
         DamageAttack fireBolt = new DamageAttack("Eldkast", 100, 40, Type.FIRE, false);
         DamageAttack bubble = new DamageAttack("Bubbla", 100, 40, Type.WATER, false);
 
-        fireBolt.executeAttack(glumander, bladis);
-        bubble.executeAttack(squirtle, bladis);
+        fireBolt.execute(glumander, bladis);
+        bubble.execute(squirtle, bladis);
 
         System.out.println("\n=== VG2 & VG5: Krasch-säker stridsrunda ===");
         pikachu.addAttack(thunderbolt);
