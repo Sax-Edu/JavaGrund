@@ -29,7 +29,6 @@ public class Lesson11LiveCode {
                 System.out.println("Det är verkligen en katt.");
             }
         }
-
-
     }
+
 }
