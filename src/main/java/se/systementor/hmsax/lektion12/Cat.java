@@ -16,11 +16,11 @@ String breed;
 
     @Override
     public void eatFood() {
-        System.out.println(name +" äter allt den kommer åt.");
+        System.out.println(this.getName() +" äter allt den kommer åt.");
     }
 
     @Override
     public void getPetted() {
-        System.out.println(name +" blir klappad.");
+        System.out.println(this.getName() +" blir klappad.");
     }
 }

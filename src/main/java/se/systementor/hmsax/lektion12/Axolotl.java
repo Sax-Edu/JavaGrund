@@ -10,6 +10,6 @@ public class Axolotl extends Animal {
 
     @Override
     public void eatFood() {
-        System.out.println(name +" äter nått gott.");
+        System.out.println(this.getName() +" äter nått gott.");
     }
 }

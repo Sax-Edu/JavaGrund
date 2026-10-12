@@ -15,6 +15,6 @@ public class Horse extends Animal {
 
     @Override
     public void eatFood() {
-        System.out.println(name +" äter havre.");
+        System.out.println(this.getName() +" äter havre.");
     }
 }

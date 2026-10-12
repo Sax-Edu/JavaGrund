@@ -1,8 +1,8 @@
 package se.systementor.hmsax.lektion12;
 
 public abstract class Animal {
-     String name;
-     int amountOfLegs;
+     private String name;
+     private int amountOfLegs;
      private MoveStrategy moveStrategy; //Strategy pattern
 
     protected Animal(String name, int amountOfLegs, MoveStrategy moveStrategy) {
@@ -27,5 +27,11 @@ public abstract class Animal {
 
     public abstract void eatFood();
 
+    public String getName() {
+        return name;
+    }
 
+    public int getAmountOfLegs() {
+        return amountOfLegs;
+    }
 }

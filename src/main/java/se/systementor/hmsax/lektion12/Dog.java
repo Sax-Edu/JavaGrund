@@ -16,11 +16,11 @@ public class Dog extends Animal implements Pettable {
 
     @Override
     public void eatFood() {
-        System.out.println(name + " äter ett ben.");
+        System.out.println(this.getName() + " äter ett ben.");
     }
 
     @Override
     public void getPetted() {
-        System.out.println(name +" blir klappad och viftar på svansen.");
+        System.out.println(this.getName() +" blir klappad och viftar på svansen.");
     }
 }
