@@ -16,7 +16,10 @@ public class Lesson13LiveCode {
 
         String id = UUID.randomUUID().toString();
 
+        UUID id2 = UUID.randomUUID();
+
         System.out.println("ID: " +id);
+        System.out.println("ID2: " +id2);
 
         Pokemon pikachu = new Pokemon("Pikachu", 67);
         Pokemon snorlax = new Pokemon("Snorlax", 100);
