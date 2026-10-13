@@ -17,7 +17,6 @@ public class InputHelper {
                 scanner.nextLine();   // rensa felaktig input från buffern
             }
         }
-
     }
 
     public static int readIntBetween(Scanner scanner, String prompt, int min, int max){
