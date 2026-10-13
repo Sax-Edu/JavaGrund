@@ -1,0 +1,7 @@
+package se.systementor.hmsax.lektion14.ovningsuppgifter;
+
+public class NumberUtils {
+    public boolean isEven(int n) {
+        return n % 2 == 0;
+    }
+}
